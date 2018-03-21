@@ -51,7 +51,7 @@ public class Program {
                 //pass the President
                 System.out.println("Does the president sign the bill? yes/no");
                 String isSign = keyboard.next();
-                if (isSign.toLowerCase().equals("yes")){
+                if (isSign.toLowerCase().trim().equals("yes")){
                     System.out.println("The bill had become law");
                 }
                 else{
@@ -71,7 +71,7 @@ public class Program {
                         }else System.out.println("The veto is overridden and the bill becomes a law without the president’s signature");
                     }
                 }
-            }}
-
+            }} 
+            keyboard.close();
     }
 }
